@@ -62,7 +62,7 @@ def current_player(board)
   end
 end
 
-def def last_player(board)
+def last_player(board)
   if turn_count(board).odd?
     return "X"
   else
