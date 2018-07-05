@@ -95,4 +95,5 @@ def play(board)
   end
   if over?(board)
     puts "Congratulations #{current_player(board)}"
+  end
 end
