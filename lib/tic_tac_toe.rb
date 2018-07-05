@@ -62,14 +62,6 @@ def current_player(board)
   end
 end
 
-def last_player(board)
-  if turn_count(board).odd?
-    return "X"
-  else
-    return "O"
-  end
-end
-
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
     board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && board[combo[2]] == board[combo[0]] && board[combo[0]] != " "
